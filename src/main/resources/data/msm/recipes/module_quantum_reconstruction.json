@@ -1,0 +1,36 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "key":
+  {
+    "A":
+    {
+      "item":"mekanism:pellet_antimatter"
+    },
+    "B":
+    {
+      "item":"mekanism:module_base"
+    },
+    "C":
+    {
+      "item":"mekanism:teleportation_core"
+    },
+    "D":
+    {
+      "item":"minecraft:echo_shard"
+    },
+    "E":
+    {
+      "tag":"forge:alloys/ultimate"
+    }
+  },
+  "pattern":
+  [
+    "EDE",
+    "CBC",
+    "AAA"
+  ],
+  "result":
+  {
+    "item":"msm:module_quantum_reconstruction"
+  }
+}

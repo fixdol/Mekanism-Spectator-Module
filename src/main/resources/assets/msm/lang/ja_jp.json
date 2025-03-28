@@ -1,0 +1,6 @@
+{
+  "description.msm.quantum_reconstruction": "量子レベルで物質を解体・再構成することで、トンネル効果によってスペクテイターモードのようにブロックを透過することができるようになります。",
+  "item.msm.quantum_reconstruction": "量子再構成ユニット",
+  "module.msm.phase_through_blocks": "ブロック透過",
+  "module.msm.quantum_reconstruction": "量子再構成ユニット"
+}

@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.fxd927.msm.mixin",
+  "refmap": "msm.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinItemMekSuitArmor"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
