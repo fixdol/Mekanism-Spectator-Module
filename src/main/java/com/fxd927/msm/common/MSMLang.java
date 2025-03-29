@@ -1,7 +1,6 @@
 package com.fxd927.msm.common;
 
 import mekanism.api.text.ILangEntry;
-import mekanism.common.Mekanism;
 import net.minecraft.Util;
 
 public enum MSMLang implements ILangEntry {

@@ -14,10 +14,10 @@ public class ModuleQuantumReconstructionUnit implements ICustomModule<ModuleQuan
     @Override
     public void tickServer(IModule<ModuleQuantumReconstructionUnit> module, Player player)
     {
-        if (!module.isEnabled()) {
-            player.noPhysics = false;
-        } else {
+        if (module.isEnabled() && !player.onGround()) {
             player.noPhysics = true;
+        } else {
+            player.noPhysics = false;
         }
     }
 

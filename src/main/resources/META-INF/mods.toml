@@ -4,7 +4,7 @@ license="${mod_license}"
 
 [[mods]]
 modId="msm"
-version="1.0"
+version="1.1"
 displayName="Mekanism: Spectator Module"
 authors="FixedDolphin927"
 

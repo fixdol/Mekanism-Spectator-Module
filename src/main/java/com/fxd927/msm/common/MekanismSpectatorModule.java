@@ -28,8 +28,11 @@ public class MekanismSpectatorModule
     public static final String MODID = "msm";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public MekanismSpectatorModule(FMLJavaModLoadingContext context)
-    {
+    public MekanismSpectatorModule() {
+        this(FMLJavaModLoadingContext.get());
+    }
+
+    public MekanismSpectatorModule(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::imcQueue);

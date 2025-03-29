@@ -15,8 +15,8 @@ import java.util.List;
 public class MixinItemMekSuitArmor {
     @Inject(method = "getDamageAbsorbed(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/damagesource/DamageSource;FLjava/util/List;)F", at = @At(value = "HEAD"), cancellable = true)
     private static void injectCustomDamageAbsorption(Player player, DamageSource source, float amount, @Nullable List<Runnable> energyUseCallbacks, CallbackInfoReturnable<Float> cir) {
-        if (player.noPhysics == false && player.isInWall() == true) {
-            cir.setReturnValue(1.0F); // ダメージを完全に吸収
+        if (player.noPhysics == true && player.isInWall() == true) {
+            cir.setReturnValue(1.0F);
         }
     }
 }
