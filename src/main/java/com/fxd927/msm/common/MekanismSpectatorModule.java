@@ -4,7 +4,6 @@ import com.fxd927.msm.common.registries.MSMItems;
 import com.fxd927.msm.common.registries.MSMModules;
 import com.mojang.logging.LogUtils;
 import mekanism.api.MekanismIMC;
-import mekanism.common.Mekanism;
 import mekanism.common.registries.MekanismCreativeTabs;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
@@ -27,6 +26,7 @@ public class MekanismSpectatorModule
 {
     public static final String MODID = "msm";
     private static final Logger LOGGER = LogUtils.getLogger();
+    private static final ThreadLocal<Boolean> noSuffocation = ThreadLocal.withInitial(() -> false);
 
     public MekanismSpectatorModule() {
         this(FMLJavaModLoadingContext.get());
